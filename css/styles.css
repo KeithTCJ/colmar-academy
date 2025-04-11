@@ -101,7 +101,6 @@ html, body{
     justify-content: center;
 }
 
-/* TODO - add h1 and h2 styles for header area */
 .header-content div h1{
     font-size: 2.5rem;
     color: #484848
@@ -213,11 +212,169 @@ html, body{
     background-color: #d8d8d8;
 }
 
+.events-mobile{
+    display: none;
+}
+
 /* End of practice section */
+
+/* Start of learning section */
+#start-learning-section{
+    grid-column: full--start / full--end;
+    margin: auto;
+    height: 100dvh;
+    border: 1px solid black;
+    background-color: #c8c8c8;
+    padding: 0 4.5rem 2rem 4.5rem;
+}
+
+.showcase-container{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 2rem;
+}
+
+.learning-title{
+    font-size: xx-large;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.lesson-card {
+    font-size: x-large;
+    background-color: #ffffff;
+}
+
+.lesson-card a:link,
+.lesson-card a:active,
+.lesson-card a:visited{
+    text-decoration: none;
+    color: #484848;
+}
+
+
+/* End of learning section */
+
+/* Start of thesis section */
+
+
+/* End of thesis section */
+
+
 
 /* **************************** */
 /* End of Desktop View */
 
 /* Start of Mobile View */
-/* TODO */
+/* **************************** */
+/* ! Start of Mobile Navigation */
+
+.mobile-nav{
+    display: none;
+}
+
+/* End of Mobile Navigation */
+
+/* !Start of Media Query */
+/* Target size: 640px (40rem) width */
+@media screen and (max-width: 40rem){
+
+    /* hide desktop-nav */
+    .desktop-nav{
+        display: none;
+     }
+
+     /* display mobile nav */
+     .mobile-nav{
+        display: flex;
+        grid-column: full--start / full--end;     /*lets nav bar occupy whole width of screen */
+        align-items: center;
+        width: auto;
+        height: 4rem;
+        justify-content: space-around;
+     }
+
+     .container{
+        max-width: 100dvw;
+     }
+
+     .header-picture{
+        grid-column: full--start / full--end;
+     }
+
+     .header-picture img{
+        padding: 0;
+     }
+
+     .header-content{
+        display: flex;
+        grid-column: full--start / full--end;
+        padding: 2rem 1rem 2rem 1rem;
+     }
+
+     .header-content div h1{
+        font-size: xx-large;
+        padding: 0 0 2rem 0;
+     }
+
+     .header-content div h2{
+        font-size: larger;
+        padding: 0 0 2rem 0;
+     }
+
+     .header-contentdiv{
+        display: block;
+        width: 100%;
+     }
+
+     /* practice, events */
+     .practice{
+        display: none;
+     }
+
+     .events{
+        display: none;
+     }
+     
+     .events-mobile{
+        display: block;
+        grid-column: full--start / full--end;
+        padding: 1rem;
+     }
+
+     .events-mobile .event-block{
+        grid-template-columns: 1fr;
+     }
+
+     .events-mobile .event-block img{
+        padding: 0;
+     }
+
+     .events-mobile .event-block-content{
+        padding: 2rem 0 2rem 1rem;
+        margin: 0;
+     }
+
+     .events-mobile .event-block-content h4{
+        font-size: x-large;
+        font-weight: 600;
+     }
+
+     .events-mobile .event-block-content p{
+        font-size: large;
+        font-weight: lighter;
+     }
+
+     .events-mobile .event-block-content a:link{
+        font-size: large;
+     }
+}
+
+    
+
+/* End of Media Query */
+
+/* **************************** */
 /* End of Mobile View */
