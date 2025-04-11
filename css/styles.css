@@ -271,6 +271,10 @@ html, body{
     color: #484848;
 }
 
+.mobile-learning{
+    display: none;
+}
+
 
 /* End of learning section */
 
@@ -439,7 +443,7 @@ html, body{
         width: 100%;
      }
 
-     /* practice, events */
+     /* practice, events mobile*/
      .practice{
         display: none;
      }
@@ -480,6 +484,91 @@ html, body{
      .events-mobile .event-block-content a:link{
         font-size: large;
      }
+     /* end of practice, events mobile */
+
+     /*start of learning mobile */
+     #start-learning-section{
+        display: none;
+     }
+
+
+     .mobile-learning{
+        display: block;
+        grid-column: full--start / full--end;
+     }
+
+     .mobile-learning-title{
+        border-top: 1px solid #ebebec;
+        text-align: center;
+        font-size: xx-large;
+        color: #464646;
+        padding: 2rem 0 1rem 0;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+     }
+
+     .mobile-item{
+        text-align: center;
+        color: #4a4a4a;
+        font-size: x-large;
+        margin: 0 0.5rem 0.5rem 0.5rem;
+        padding: 1rem 0 1.5rem 1rem;
+        font-weight: 700;
+        background-color: #d8d8d8;
+     }
+
+     .mobile-item a:link,
+     .mobile-item a:visited,
+     .mobile-item a:active{
+        color: #4a4a4a;
+        text-decoration: none;
+     }
+
+     .learning-list{
+        margin-bottom: 2rem;
+     }
+     /* end of learning mobile */
+
+     /* Start of thesis mobile */
+     .thesis-title, .thesis-video, .thesis-project {
+        display: none;
+     }
+
+     .mobile-thesis{
+        display: block;
+        grid-column: full--start / full--end;
+     }
+
+     .mobile-thesis-title{
+        font-size: xx-large;
+        color: #3d3d3d;
+        font-weight: 700;
+        text-align: center;
+        padding: 2rem 0;
+        border-top:1px solid #eaeaeb;
+     }
+
+     .mobile-video{
+        margin-bottom: 1.5rem;
+     }
+     /* end of thesis mobile */
+
+     /* start of footer mobile */
+
+     .footer{
+        display: none;
+     }
+
+     .mobile-footer{
+        display: block;
+        grid-column: full--start / full--end;
+        margin: 2.5rem 0 1rem 1rem;
+     }
+
+
+     /* end of footer mobile */
+
+
 }
 
     
