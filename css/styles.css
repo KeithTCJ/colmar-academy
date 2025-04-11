@@ -221,17 +221,16 @@ html, body{
 /* Start of learning section */
 #start-learning-section{
     grid-column: full--start / full--end;
-    margin: auto;
-    height: 100dvh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #c8c8c8;
-    padding: 0 4.5rem 2rem 4.5rem;
+    padding: 0 4.5rem 4rem 4.5rem;
 }
 
 .showcase-container{
     display: grid;
-    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
+    /* border: 1px solid black; */
 }
 
 .learning-title{
@@ -247,6 +246,24 @@ html, body{
     background-color: #ffffff;
 }
 
+.course-link img{
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.course-link h4{
+    padding: 1rem 0 1rem 1rem;
+}
+
+.course-link .course{
+    padding:0 0 0.5rem 1rem;
+}
+
+.course-link .modules{
+    padding: 0 0 3rem 1rem;
+}
+
 .lesson-card a:link,
 .lesson-card a:active,
 .lesson-card a:visited{
@@ -259,8 +276,101 @@ html, body{
 
 /* Start of thesis section */
 
+.thesis-title{
+    font-size: xx-large;
+    font-weight: 100;
+    color: #38abde;
+    display: block;
+    grid-column: full--start / full--end;
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 2rem 0;
 
+}
+.thesis-video-file{
+    padding-left: 1.5rem;
+}
+
+.thesis-video h3{
+    padding: 1.5rem 0 0.5rem 0;
+    color: #484848;
+    padding-left: 1.5rem;
+}
+
+.thesis-video p{
+    padding: 0 0 2rem 0;
+    color: #484848;
+    font-weight: 200;
+    padding-left: 1.5rem;
+}
+
+.thesis-project-block{
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: small;
+    color: #fff;
+    background-color: #282c37;
+    margin-left: 3rem;
+    font-size: large;
+}
+
+.thesis-project-block img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.thesis-block-content{
+    margin: 0 2rem;
+}
+
+.thesis-project-block:last-child{
+    background-color: #ffffff;
+    color: #484848;
+}
 /* End of thesis section */
+
+/* start of footer section */
+.footer{
+    /* causes code to consume entire width of viewport */
+    grid-column: full--start/full--end;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-top:1px solid #e9ebeb;
+}
+
+.copyright{
+    padding: 1rem 0 0 1.5rem;
+    color: #484848;
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+}
+
+.footer-list a{
+    display: inline-block;
+    text-decoration: none;
+    color: #828282;
+    font-size: 1rem;
+}
+
+.footer-item:not(:last-child){
+    margin-right:1rem;
+}
+
+.footer-item:last-child{
+    margin-right: 1.5rem;
+}
+
+
+/* end of footer section */
 
 
 
