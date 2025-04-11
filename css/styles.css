@@ -334,6 +334,10 @@ html, body{
     background-color: #ffffff;
     color: #484848;
 }
+
+.mobile-thesis{
+    display: none;
+}
 /* End of thesis section */
 
 /* start of footer section */
@@ -373,6 +377,8 @@ html, body{
     margin-right: 1.5rem;
 }
 
+.mobile-footer {
+    display: none;}
 
 /* end of footer section */
 
